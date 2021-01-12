@@ -30,11 +30,11 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
     	http.authorizeRequests().requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
     	.antMatchers(AUTH_WHITELIST).permitAll();
-    	http.cors().and().csrf().disable().authorizeRequests(authorize -> authorize
-                .anyRequest().authenticated()
-                )
-                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
-        
+//    	http.cors().and().csrf().disable().authorizeRequests(authorize -> authorize
+//                .anyRequest().authenticated()
+//                )
+//                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
+//        
     }
     
 }
