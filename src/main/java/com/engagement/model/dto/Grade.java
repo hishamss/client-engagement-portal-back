@@ -20,5 +20,6 @@ public class Grade {
 	private int gradeId;
 	private String dateReceived;
 	private double score;
+	private int assessmentId;
 	private String traineeId;
 }
