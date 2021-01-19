@@ -20,7 +20,7 @@ pipeline {
         }
       }
     }
-    stage('Install maven dependencies') {
+    /*stage('Install maven dependencies') {
       steps {
         //clean install maven
         sh 'mvn install'
@@ -30,7 +30,7 @@ pipeline {
       steps {
         sh 'mvn clean package' 
       }
-    }
+    }*/
     /*
       * Tries to remove an existing Docker Container named cep
     */
