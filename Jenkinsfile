@@ -25,12 +25,12 @@ pipeline {
         //clean install maven
         sh 'mvn install'
       }
-    }
+    }*/
     stage ('Clean & Package') {
       steps {
         sh 'mvn clean package' 
       }
-    }*/
+    }
     /*
       * Tries to remove an existing Docker Container named cep
     */
